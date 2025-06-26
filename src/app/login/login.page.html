@@ -20,11 +20,6 @@
     <ion-button expand="block" type="submit" [disabled]="loginForm.invalid">Iniciar Sesion</ion-button>
     <ion-button expand="block" color="medium" (click)="registrar()" [disabled]="loginForm.invalid">Registrarse</ion-button>
 
-    @if(login_error) {
-      <ion-text color="danger">
-        <p>Error de login: revisa los datos o confirma el email</p>
-      </ion-text>
-    }
 
   </form>
   <ion-grid>
